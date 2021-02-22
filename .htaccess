@@ -1,0 +1,4 @@
+RewriteEngine On
+  RewriteCond %{HTTP_HOST} ^api-shizukaa.herokuapp.com$ [OR]
+  RewriteCond %{HTTP_HOST} ^www.api-shizukaa.herokuapp.com$
+  RewriteRule (.*)$ https://api.shizukaa.xyz/$1 [R=301,L]
